@@ -5,5 +5,79 @@
 }
 
 body {
-    font-family: "Nerko One";
+    font-family: "Nerko One", Arial, Helvetica, sans-serif;
+    background-color: #add8e6;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.container {
+    width: 1024px;
+    margin: auto;
+}
+/* Header */
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 70px;
+}
+
+/* Fine Header */
+
+/* Main */
+.row {
+    text-align: center;
+}
+
+.card {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px 15px 210px;
+    border-radius: 10px;
+    position: relative;
+    background-color: white;
+    background-image: url('../img/pattern.png');
+    background-size: contain;
+}
+
+.card .img-text, img {
+    display: none;
+}
+
+.card:hover {
+    background-image: none;
+}
+
+.card:hover img{
+    display: block;
+}
+
+.card:hover .img-text{
+    display: block;
+}
+.img-text {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: orange;
+}
+
+#special {
+    background-image: none;
+}
+ #special img {
+     display: block;
+ }
+
+ #special .img-text {
+    display: block;
+    color: red;
 }
